@@ -1,0 +1,97 @@
+.admin-manage-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #f9f9ff;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Content */
+.content {
+  flex: 1;
+  padding: 40px 60px;
+  text-align: center;
+}
+
+.content h1 {
+  color: #6a1b9a;
+  margin-bottom: 30px;
+}
+
+/* Cards Container */
+.admin-cards-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.admin-card {
+  background-color: #fff;
+  border: 2px solid #9c27b0;
+  border-radius: 12px;
+  padding: 25px 35px;
+  width: 250px;
+  cursor: pointer;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.admin-card:hover {
+  background-color: #9c27b0;
+  color: #fff;
+  transform: translateY(-5px);
+}
+
+.admin-card h2 {
+  margin-bottom: 10px;
+}
+
+.admin-card p {
+  font-size: 14px;
+}
+
+/* Task Section */
+.task-section {
+  background-color: #f1e6ff;
+  border: 1px solid #c77dff;
+  border-radius: 10px;
+  width: 60%;
+  margin: 0 auto;
+  padding: 20px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.task-section h3 {
+  color: #6a1b9a;
+  margin-bottom: 10px;
+}
+
+.task-message {
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+}
+
+/* Dark Mode Support */
+body.dark-mode .admin-manage-page {
+  background-color: #121212;
+  color: #f5f5f5;
+}
+
+body.dark-mode .admin-card {
+  background-color: #1e1e2e;
+  border-color: #bb86fc;
+  color: #fff;
+}
+
+body.dark-mode .admin-card:hover {
+  background-color: #bb86fc;
+  color: #121212;
+}
+
+body.dark-mode .task-section {
+  background-color: #1e1e2e;
+  border-color: #bb86fc;
+}

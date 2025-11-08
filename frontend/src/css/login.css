@@ -1,0 +1,125 @@
+/* === Page Base === */
+.login-page {
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f7f4;
+  transition: all 0.3s ease;
+}
+
+.login-page.dark-mode {
+  background-color: #121212;
+  color: #f1f1f1;
+}
+
+/* === Container === */
+.login-container {
+  background-color: #fff;
+  padding: 50px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  max-width: 400px;
+  transition: all 0.3s ease;
+}
+
+.dark-mode .login-container {
+  background-color: #1e1e1e;
+}
+
+/* === Heading === */
+.login-container h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #0b3d02;
+}
+
+.dark-mode .login-container h2 {
+  color: #f1f1f1;
+}
+
+/* === Inputs & Dropdown === */
+.login-container input,
+.login-container select {
+  width: 100%;
+  padding: 12px 15px;
+  margin: 10px 0;
+  border: 1px solid #0b3d02;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+  transition: all 0.3s ease;
+  background-color: #fff;
+  color: #222;
+}
+
+.dark-mode .login-container input,
+.dark-mode .login-container select {
+  background-color: #222;
+  color: #f1f1f1;
+  border-color: #1e8449;
+}
+
+.login-container input:focus,
+.login-container select:focus {
+  border-color: #1e8449;
+  box-shadow: 0 0 5px #1e8449;
+}
+
+/* === Button === */
+.login-container button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 20px;
+  background-color: #145a32;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.login-container button:hover {
+  background-color: #1e8449;
+}
+
+/* === Footer Text === */
+.login-footer {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 14px;
+  color: #222;
+}
+
+.dark-mode .login-footer {
+  color: #f1f1f1;
+}
+
+.login-footer a {
+  color: #1e8449;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.login-footer a:hover {
+  text-decoration: underline;
+}
+
+/* === Toggle Dark Mode === */
+.toggle-mode {
+  margin-top: 25px;
+  text-align: center;
+  cursor: pointer;
+  font-size: 14px;
+  color: #1e8449;
+  font-weight: bold;
+  transition: transform 0.3s ease;
+}
+
+.toggle-mode:hover {
+  transform: scale(1.1);
+}

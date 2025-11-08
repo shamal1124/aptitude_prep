@@ -1,0 +1,212 @@
+/* Sidebar */
+.sidebar {
+  width: 60px;
+  background-color: #ffffff;
+  color: #4b0082;
+  padding: 15px;
+  box-sizing: border-box;
+  transition: width 0.3s;
+  border-right: 1px solid #ddd;
+}
+
+.sidebar.open {
+  width: 220px;
+}
+
+.sidebar-toggle {
+  background-color: #103214ff;
+  color: white;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  cursor: pointer;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+.sidebar-content h4 {
+  margin-bottom: 10px;
+  color: #4b0082;
+}
+
+.sidebar-content p {
+  margin: 3px 0;
+}
+
+/* Dashboard Content */
+.dashboard-content {
+  flex: 1;
+  padding: 20px;
+}
+
+/* Overview Cards */
+.overview-section {
+  margin-top: 30px;
+}
+
+.overview-section h2 {
+  color: #4b0082;
+  margin-bottom: 15px;
+}
+
+.overview-cards {
+  display: flex;
+  gap: 20px;
+}
+
+.card {
+  flex: 1;
+  background: rgb(66, 12, 60);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.card h3 {
+  color: #ff86d5;
+  margin-bottom: 8px;
+}
+
+.card p {
+  font-size: 22px;
+  font-weight: bold;
+  color: #fffcfc;
+}
+
+/* Question Table */
+.table-wrapper {
+  overflow-x: auto;
+}
+
+.question-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.question-table th {
+  border: 1px solid #ddd;
+  padding: 10px;
+  font-weight: bold;
+  background-color: #f4f0ff;
+  color: #4b0082;
+  text-align: center;
+}
+
+.question-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  font-size: 14px;
+  text-align: center;
+}
+
+/* Buttons */
+.edit-btn {
+  background-color: #4b0082;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.edit-btn:hover {
+  background-color: #6930c3;
+}
+
+.delete-btn {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.delete-btn:hover {
+  background-color: #e63946;
+}
+
+/* Management Section */
+.management-section {
+  margin-top: 40px;
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.management-section h2 {
+  color: #4b0082;
+  margin-bottom: 10px;
+}
+
+.main-section {
+  display: flex;
+  flex-direction: row; /* ensures sidebar and content are side by side */
+  flex: 1;
+  min-height: calc(100vh - 60px); /* optional, minus navbar/footer height */
+}
+
+.dashboard-content {
+  flex: 1; /* takes remaining space next to sidebar */
+  padding: 20px;
+}
+
+/* Modal Styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.modal-content h2 {
+  color: #4b0082;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.modal-content label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+  font-weight: 500;
+}
+
+.modal-content textarea,
+.modal-content input,
+.modal-content select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.modal-content textarea:focus,
+.modal-content input:focus,
+.modal-content select:focus {
+  border-color: #4b0082;
+  outline: none;
+  box-shadow: 0 0 3px rgba(75, 0, 130, 0.3);
+}
+
+
